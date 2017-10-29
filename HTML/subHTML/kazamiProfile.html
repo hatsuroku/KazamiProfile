@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>The profile of Kazami</title>
+    <link rel="stylesheet" href="../css/what.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/myAnimation.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/transition.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/forAnimation.css" type="text/css"/>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        body {
+            margin: 0 -20px;
+        }
+
+        iframe {
+            height: 100%;
+            width: 100%;
+            border: hidden;
+            box-sizing: border-box;
+            overflow-y: scroll;
+        }
+
+        .left {
+            float: left;
+            width: 30%;
+            height: 100%;
+            background-color: #1467a3;
+            padding: 5% 8% 0 8%;
+            box-sizing: border-box;
+        }
+
+        .right {
+            float: right;
+            width: 70%;
+            height: 100%;
+        }
+
+        /* 使用padding为0做左对齐效果 */
+        ul {
+            float: left;
+            list-style-type: circle;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        /* 同上 */
+        .mae a:link, a:visited {
+            display: block;
+            width: 200%;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .mae a:hover, a:active {
+            color: #FFFFFF;
+            font-weight: bold;
+            transform: translate(-4px, -4px);
+            text-shadow: 2px 2px 1px #333333;
+            transition-duration: 300ms ;
+            /*animation: rubberBand 1s;*/
+        }
+
+        .ato a {
+            display: block;
+            width: 200%;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .ato a:hover, a:active {
+            color: #FFFFFF;
+            font-weight: bold;
+            transform: translate(-4px, -4px);
+            text-shadow: 2px 2px 1px #333333;
+            transition-duration: 300ms ;
+            /*animation: rubberBand 1s;*/
+        }
+
+        #hiddenLink {
+            color: transparent;
+            transform: none;
+        }
+        #hiddenLink:hover {
+            text-shadow: none;
+            cursor: context-menu;
+        }
+
+        table {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body class="darkBackGroundBody ">
+<div id="mainLeft" class="left whiteFont mae changeBackColor shiftDangan">
+    <table border="0" id="leftTable">
+        <tr>
+            <td>
+                <img id="avatar" class="changeImg " onclick="slideOut()"
+                     src="../img/dora_kid.jpg" height="200px" width="200px"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1 id="myName" onclick="changeDanganColor()">Kazami Hatsuroku</h1>
+            </td>
+        <tr>
+            <td>
+                <ul class="">
+                    <li><a href="introduction.html" target="right_frame" onclick="shiftToNormalColor()">个人介绍以及抱怨</a></li>
+                    <li><a href="timeRecord.html" target="right_frame" onclick="shiftToNormalColor()">积累而来的经验</a></li>
+                    <li><a href="breakroom.html" target="right_frame" onclick="shiftToNormalColor()">用于休息的杂物间</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a id="hiddenLink" href="monokumaFile.html" target="right_frame" onclick="shiftToDanganColor()">
+                    Monokuma file
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="smallFont bottom changeFontColor" id="author">by Kazami Hatsuroku 2017</p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="right">
+    <iframe name="right_frame" src="introduction.html">
+    </iframe>
+</div>
+</body>
+<script src="../js/dynamics.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

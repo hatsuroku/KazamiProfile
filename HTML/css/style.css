@@ -1,0 +1,160 @@
+/*-----------------*/
+/*---背景颜色处理----*/
+/*-----------------*/
+.greyBackGroundBody {
+    background-color: lightgrey;
+}
+.blackBackGroundBody {
+    background-color: black;
+}
+.darkBackGroundBody {
+    background-color: #121212;
+}
+
+
+/*-----------------*/
+/*-----容器处理-----*/
+/*-----------------*/
+.backGroundDiv {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.backGroundVideo {
+    height: 110%;
+    width: 110%;
+    padding: 0;
+    margin: 0;
+}
+.forwardVideo {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+/* 右边的主要框体 */
+.RightMain {
+    padding: 5px 8%;
+    width: 90%;
+    height: 100%;
+    margin: 5% auto;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.47);
+}
+
+.thinRightMain {
+    padding: 5px 8%;
+    width: 60%;
+    height: 100%;
+    margin: 5% auto;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.47);
+}
+
+/* 用于右边的小框体 */
+.rightSub {
+    width: 50%;
+    height: 50%;
+    margin: auto auto;
+    padding:0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+
+/*-----------------*/
+/*---用于调整位置----*/
+/*-----------------*/
+.center {
+    text-align: center;
+}
+.floatLeft {
+    float: left;
+}
+.floatMiddle {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+}
+/* 用于位于底部的元素 */
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+/* 防止动画错位 */
+.yScroll {
+    overflow-y: scroll;
+}
+/* 用于缩进 */
+.forIndent {
+    text-indent: 60px;
+}
+
+
+
+
+/*-----------------*/
+/*-----一些特效-----*/
+/*-----------------*/
+.blur {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+
+/*-----------------*/
+/*---文字处理效果----*/
+/*-----------------*/
+.veryBigFont {
+    font-size: 100px;
+}
+.bigFont {
+    font-size: 60px;
+}
+.toIndex {
+    text-indent : 120px;
+}
+.smallFont {
+    font-size: smaller;
+    font-weight: lighter;
+    font-family: "微软雅黑 Light", sans-serif;
+    color: #86b1d1;
+}
+.subFont {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: smaller;
+}
+.hiddenFont{
+    background-color: black;
+}
+.hiddenFont:hover{
+    color: white;
+}
+.whiteFont {
+    color: #FFFFFF;
+}
+.blackFont {
+    color: #000000;
+}
+.selectedFont {
+    color: #ff01cc;
+}
+.boldTitleFont {
+    font-weight: bold;
+    font-size: 1em;
+    text-indent: 20px;
+}
+
+
+
+
+

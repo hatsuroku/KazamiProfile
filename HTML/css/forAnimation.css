@@ -1,0 +1,58 @@
+.first {
+    animation-fill-mode: backwards;
+}
+.second {
+    animation-fill-mode: backwards;
+    animation-delay: 0.2s;
+}
+
+.shiftDangan {
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    animation-duration: 1.2s;
+}
+
+.bounceInLeft {
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+    animation-duration: 1.5s;
+}
+
+.bounceOutLeft {
+    animation-fill-mode: backwards;
+    -webkit-animation-name: bounceOutLeft;
+    animation-name: bounceOutLeft;
+    animation-duration: 1.5s;
+}
+
+.bounceInRight {
+    -webkit-animation-name: bounceInRight;
+    -moz-animation-name: bounceInRight;
+    -o-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+    animation-duration: 1.2s;
+}
+
+
+.timer{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 2px #000000;
+    border-radius: 50%;
+    position: relative;
+    margin: auto 0 auto auto ;
+}
+

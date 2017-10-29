@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to kazami</title>
+    <link rel="stylesheet" href="../css/what.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/myAnimation.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/forAnimation.css" type="text/css" />
+    <link rel="stylesheet" href="../css/transition.css" type="text/css"/>
+</head>
+
+<body id="introBack" class="greyBackGroundBody yScroll" onclick="changeBackGround()" >
+<div class="RightMain bounceInUp center first" >
+    <h1>Introduction to Kazami</h1>
+    <br />
+    <p>超高校级的<span onmouseover="this.innerHTML='幸运？'" onmouseout="this.innerHTML='不幸。'" onclick="changeBackGround()">不幸。</span></p>
+    <p>突出但不是唯一的缺点是比普通人更加消极低沉。</p>
+    <p>自称“没有能力，混吃等死的普通大学生”、“唯一的愿望是普通地生活”。</p>
+    <p>……但是在他自称“普通”的外表下藏着的究竟是真正的普通还是扭曲的疯狂？</p>
+    <p>很可惜，连他自己也不知道。</p>
+    <br />
+    <p class="subFont center">commented by Ryukamine Yuuji.</p>
+</div>
+<div class="RightMain bounceInUp second">
+    <h1 class="center">今天的一些抱怨</h1>
+    <br />
+    <p>不是速溶的咖啡真的超级难喝。</p>
+    <p>真的超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝超级难喝
+        很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱
+        很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱很浪费钱
+        很浪费钱很浪费钱很浪费钱</p>
+    <br />
+    <p class="subFont center">买错东西而后悔的无用牢骚</p>
+</div>
+</body>
+<script>
+    var isGrey = true;
+    function changeBackGround() {
+        var back = document.getElementById('introBack');
+        if (isGrey) {
+            back.style.backgroundColor = "#121212";
+            isGrey = false;
+        }
+        else {
+            back.style.backgroundColor = "lightgrey";
+            isGrey = true;
+        }
+    }
+</script>
+</html>

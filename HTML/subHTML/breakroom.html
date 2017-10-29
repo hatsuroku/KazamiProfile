@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>用于游戏的世界线间隙</title>
+    <link rel="stylesheet" href="../css/what.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/myAnimation.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/forAnimation.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/transition.css" type="text/css"/>
+</head>
+<body class="backGroundDiv blackBackGroundBody">
+<div class="backGroundVideo blur" onclick="playPause(bigV, smallV)">
+        <video id="bigV" class="backGroundVideo" autoplay loop>
+            <source src="../video_music/dokuro_back.mp4" />
+            求你了，用最新版chrome吧.jpg
+        </video>
+</div>
+<div class="rightSub floatMiddle" onclick="playPause(bigV, smallV)">
+    <video id="smallV" class="forwardVideo" autoplay loop>
+        <source src="../video_music/dokuro.mp4" />
+        求你了，用最新版chrome吧.jpg
+    </video>
+</div>
+</body>
+<script>
+    function playPause(v1, v2)
+    {
+        if (v1.paused && v2.paused) {
+            v1.play();
+            v2.play();
+        }
+        else {
+            v1.pause();
+            v2.pause();
+        }
+    }
+
+</script>
+</html>
