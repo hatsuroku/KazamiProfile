@@ -5,6 +5,10 @@
     animation-fill-mode: backwards;
     animation-delay: 0.2s;
 }
+.third {
+    animation-fill-mode: backwards;
+    animation-delay: 0.4s;
+}
 
 .shiftDangan {
     animation-fill-mode: forwards;

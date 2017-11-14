@@ -37,6 +37,10 @@
     position: absolute;
     top: 0;
 }
+#mainLeft {
+    position: relative;
+}
+
 /* 右边的主要框体 */
 .RightMain {
     padding: 5px 8%;
